@@ -1,0 +1,167 @@
+body{
+    background-color:#89ffb2;
+    overflow: hidden;
+    padding: 10px;
+    margin: 0 0 0 1vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    margin: 2vh 0 0 1vw;
+    gap: 1vw;
+}
+
+.spotifyIco{
+    width: 5vw;
+    height: auto;
+   
+    
+}
+
+.spotifyIco>img{
+    width: 100%;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input{
+    height: 4vh;
+    width: 20.5vw;
+    border-radius: 8px;
+    border: 1px solid #000000;
+}
+
+button{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    height: 4vh;
+    width: 5vw;
+    border-radius: 8px;
+}
+
+main{
+    margin-top: 2vh;
+}
+
+#musica{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    width: 68vw;
+    height: 80vh;
+    border-right: 1px solid black;
+    overflow-y: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.divImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 80%;
+    border-radius: 15px;
+
+}
+
+.track{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    height: 44vh;
+    gap: 10px;
+    padding: 5px;
+    border: 3px solid black;
+    transition: 0.3s ease-in-out;
+    overflow: visible;
+    
+}
+
+.track:hover{
+    background-color: rgb(255, 166, 150);
+    size: 120%;
+    transform: scale(1.05);
+}
+.botoAfegir{
+    width: 10vw;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0%;
+    font-size: 1.5em;
+}
+
+.titol{
+    text-overflow: ellipsis;
+    height: 3rem;
+}
+
+
+#infoCanco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.infoArtista{
+    border: 3px solid black;
+    width: 95%;
+    height: 70%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 5px;
+    font-size: 1.3em;
+}
+
+
+.imgArtista{
+    width: 100%;
+    border-radius:50%;
+}
+
+p{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.artista-img{
+    height: auto;
+    width: 60%;
+    margin-top: 6%;
+    margin-bottom: 10px;
+}
+
+.llistaCancons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    font-size: 1.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
