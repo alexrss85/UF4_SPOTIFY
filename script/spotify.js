@@ -1,4 +1,4 @@
-import { clientId,clientSecret } from "../script/client.js";
+import { clientId,clientSecret } from "../env/env.js";
 
 let tokenAccess = ""
 let llista;
@@ -18,8 +18,11 @@ const musica = document.querySelector("#musica")
 const artista = document.querySelector(".infoArtista");
 const divArtista = document.querySelector("#infoCanco");
 const topTracks = document.querySelector(".llistaCancons");
+const botoPlaylist = document.querySelector(".playlist");
 
-
+const URL = "https://accounts.spotify.com/authorize";
+const redirectUri = "http://localhost:5500/playlist.html";
+const scopes ="playlist-modify-private user-library-modify playlist-modify-public";
 
 botoBorrar.disabled=true
 botoBuscar.disabled=true
@@ -33,6 +36,27 @@ botoBuscar.addEventListener("click", () => {
 botoBorrar.addEventListener("click", () => {
   resetCerca()
 });
+
+botoPlaylist.addEventListener("click", () => {
+  autoritzar()
+  window.open("http://localhost:5500/playlist.html");
+
+});
+
+
+
+//funcio boto PLayilist
+const autoritzar = function () {
+  const authUrl =
+    URL +
+    `?client_id=${clientId}` +
+    `&response_type=token` +
+    `&redirect_uri=${redirectUri}` +
+    `&scope=${scopes}`;
+
+
+  window.location.assign(authUrl);
+};
 
 
 function cercarCanco(){

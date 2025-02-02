@@ -41,6 +41,12 @@ button{
     height: 4vh;
     width: 5vw;
     border-radius: 8px;
+    
+}
+
+button:hover{
+    background-color: white;
+    color: #000000;
 }
 
 main{
@@ -88,6 +94,8 @@ main{
     overflow: visible;
     
 }
+
+
 
 .track:hover{
     background-color: rgb(255, 166, 150);

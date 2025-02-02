@@ -1,0 +1,138 @@
+body{
+    margin: 20px;
+    background-color:#000000;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#botoTornar{
+    background-color: white;
+    color: black;
+}
+
+.section{
+    background-color:#ffffff;
+    border-radius: 20px;
+}
+
+
+button{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    height: 4vh;
+    width: 5vw;
+    border-radius: 8px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    gap: 10px;
+}
+
+#playlists{
+
+    width: 20vw;
+
+}
+
+input{
+    height: 75%;
+}
+
+#cancons{
+
+    width: 40vw;
+
+}
+
+#seleccionades{
+
+    width: 40vw;
+    padding-left: 1%;
+    overflow-y: auto;
+    padding-bottom: 2%;
+}
+
+#divTracks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.track{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    background-color:#6cffa0;
+    width: 95%;
+    border-radius: 10px;
+    height: 70px;
+}
+
+#playlists{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+#divLlistes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    overflow-y: auto;
+}
+
+.playlist{
+    display: flex;
+    align-items: center;
+    background-color:#6cffa0;
+    width: 100%;
+    border-radius: 10px;
+   justify-content: center;
+
+}
+
+
+button:hover{
+    background-color: white;
+    color: #000000;
+}
+
+
+#cancons{
+    padding-left: 2%;
+    overflow-y: auto;
+}
+
+#playlistTracks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.imgTrack>img{
+    width: 100%;
+   
+}
+
+.imgTrack{
+    width: 10%;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 10px 0 10px;
+
+}
+
